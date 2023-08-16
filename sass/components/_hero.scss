@@ -1,0 +1,94 @@
+.hero {
+  margin-bottom: 40px;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+    url('../images/hero.jpg');
+
+  //   background-image: url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.container {
+}
+
+.hero__title {
+  margin-bottom: 15px;
+
+  font-size: 26px;
+  line-height: 1.18;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 32px;
+  }
+}
+
+.hero__title::after {
+  display: block;
+
+  content: '';
+  width: 98px;
+  height: 4px;
+  margin-bottom: 30px;
+  margin-top: 21px;
+
+  background: linear-gradient(90deg, #5eb65f, #0059af);
+}
+
+.hero__subtitle {
+  margin-bottom: 15px;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.1;
+
+  @media screen and (min-width: $desktop) {
+    width: 600px;
+
+    font-size: 22px;
+  }
+}
+
+.hero__list {
+  padding-left: 15px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.37;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+  }
+}
+.hero__list-item {
+  //   position: relative;
+}
+
+.hero__list-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.hero__list-item::before {
+  //   position: absolute;
+  //   left: -10px;
+
+  display: inline-block;
+  margin-right: 5px;
+  content: '✓';
+
+  //   height: 24px;
+  //   width: 24px;
+
+  //   background-image: url('../images/check.svg');
+  //   fill: #000;
+}

@@ -1,0 +1,13 @@
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './base/modern-normalize';
+@import './utils/visually-hidden';
+@import './components/body';
+@import './utils/container';
+
+// основной контент
+
+@import './components/header';
+@import './components/hero';
+@import './components/tariffs';
+@import './components/footer';
